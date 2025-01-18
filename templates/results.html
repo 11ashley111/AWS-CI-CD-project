@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Python Project </title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      background-color: #4caf50;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .table-users {
+      width: 80%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .table-users .header {
+      background-color: #00aaff;
+      font-size: 1.2em;
+      padding: 15px;
+    }
+
+    .table-users .final-result {
+      padding: 20px;
+      font-size: 1.1em;
+      background-color: #e7f7ff;
+      color: #2d3d44;
+      text-align: center;
+    }
+
+    .table-users .final-result strong {
+      font-size: 1.4em;
+      color: #4caf50;
+    }
+
+    .table-users table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table-users table th,
+    .table-users table td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    .table-users table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .table-users table tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .table-users table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    .table-users table td {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .table-users table td:last-child {
+      text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .table-users {
+        width: 95%;
+      }
+
+      .table-users table th,
+      .table-users table td {
+        padding: 8px;
+        font-size: 0.9em;
+      }
+
+      .table-users table td {
+        text-align: left;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .table-users {
+        width: 100%;
+      }
+
+      .header {
+        font-size: 1.5em;
+      }
+
+      .table-users .header {
+        padding: 10px;
+      }
+
+      .table-users table th,
+      .table-users table td {
+        padding: 6px;
+        font-size: 0.85em;
+      }
+
+      .table-users table td {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">Income Result</div>
+
+  <div class="table-users">
+    <div class="final-result">
+      <p><strong>{{final_result}}</strong></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
